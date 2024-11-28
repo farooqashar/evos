@@ -26,4 +26,4 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The system is deployed via Vercel at [https://evos-sable.vercel.app/](https://evos-sable.vercel.app/)

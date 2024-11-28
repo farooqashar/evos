@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import CryptoJS from "crypto-js";
 import { db, collection, addDoc } from "./firebase";
+import "./Forms.css";
 
 const AddSignature = () => {
   const [name, setName] = useState("");
@@ -48,37 +49,48 @@ const AddSignature = () => {
   };
 
   return (
-    <div style={{ padding: "2rem" }}>
-      <p>This is used to add signatures to the database. This will typically be used by government officials to keep the signatures database up to date.</p>
-      <form onSubmit={handleSubmit}>
-        <div>
+    <div className="form-container">
+      <p className="info-text">
+        This is used to add signatures to the database. This will typically be
+        used by government officials to keep the signatures database up to date.
+      </p>
+      <form onSubmit={handleSubmit} className="forms-form">
+        <div className="form-group">
           <label>Voter Name:</label>
           <input
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
+            className="form-input"
           />
         </div>
-        <div>
+        <div className="form-group">
           <label>Voter Address:</label>
           <input
             type="text"
             value={address}
             onChange={(e) => setAddress(e.target.value)}
             required
+            className="form-input"
           />
         </div>
-        <div>
+        <div className="form-group">
           <label>Upload Voter Signature (less than 1 MB):</label>
-          <input type="file" onChange={handleFileChange} required />
+          <input
+            type="file"
+            onChange={handleFileChange}
+            required
+            className="file-input"
+          />
         </div>
-        <button type="submit">Add Voter Signature Data</button>
+        <button type="submit" className="submit-button">
+          Add Voter Signature Data
+        </button>
       </form>
-
-      {message && <p>{message}</p>}
+      {message && <p className="message">{message}</p>}
     </div>
   );
-}
+};
 
 export default AddSignature;
