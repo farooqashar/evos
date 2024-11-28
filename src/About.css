@@ -1,0 +1,25 @@
+/* Styling for About Page Container */
+.about-container {
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 30px auto;
+    text-align: left;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Styling for the About Page Title */
+  .about-title {
+    font-size: 2rem;
+    color: #003366; /* Navy blue color for the title */
+    margin-bottom: 20px;
+  }
+
+  /* Styling for About Page Text */
+  .about-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+  }

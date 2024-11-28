@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #003366; /* Navy blue background for header */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,56 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Styling for the Logo */
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Remove underline from link */
+  color: inherit; /* Ensure the text color is inherited */
+}
+
+.logo {
+  width: 400px; /* Adjust logo size */
+  height: auto;
+  margin-right: 15px; /* Space between the logo and the title */
+}
+
+
+
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: center; /* Centers the nav links horizontally */
+  gap: 20px; /* Adds spacing between the links */
+  margin: 20px 0; /* Adds spacing above and below the navbar */
+  padding: 10px; /* Adds padding inside the navbar */
+  background-color: #ffffff; /* White background for navbar */
+  border-radius: 8px; /* Rounded corners for the navbar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for effect */
+}
+
+/* Nav Links */
+.nav-link {
+  color: #003366; /* Navy blue text color */
+  text-decoration: none; /* Removes underline from links */
+  font-size: 18px; /* Increases font size */
+  font-weight: bold; /* Makes text bold */
+  padding: 10px 20px; /* Adds padding inside the link area */
+  background-color: #d72b2b; /* Red background color for links */
+  border-radius: 5px; /* Rounds the corners */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+/* Hover Effect */
+.nav-link:hover {
+  background-color: #b91e1e; /* Darker red on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Active/Clicked Effect */
+.nav-link:active {
+  background-color: #9e1616; /* Even darker red */
+  transform: scale(0.95); /* Slight shrink on click */
 }
