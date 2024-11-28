@@ -62,7 +62,7 @@ const EVOS = () => {
 
   return (
     <div className="form-container">
-      <p className="info-text">Welcome to Early Verification of Signatures (EVOS). Please enter your information and upload your signature to see if it matches against the your information on the government database.</p>
+      <p className="info-text">Welcome to Early Verification of Signatures (EVOS). Please enter your information and upload your signature to see if it matches against your information on the government database.</p>
       <form onSubmit={handleSubmit} className="forms-form">
         <div className="form-group">
           <label>Your Name:</label>
